@@ -1,5 +1,3 @@
-package Tuesday;
-
 // Class name are capitalized
 //example : String is a class, so it is capitalized
 public class TEST {
@@ -96,8 +94,7 @@ public class TEST {
         System.out.println(false);
 
         //inequlity operators
-        int grade1 = grade;
-        int i = 70;
+        grade 70
         int benchmark =65;
         //greater than or equal to:
         System.out.println(grade >= benchmark);
