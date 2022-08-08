@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Day 3" isTestSource="false" packagePrefix="Wednesday" />
       <sourceFolder url="file://$MODULE_DIR$/Day 4" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
