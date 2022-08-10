@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CLASS.iml" filepath="$PROJECT_DIR$/.idea/CLASS.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercises GIT/Week 1/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/exercises GIT/Week 1/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises GIT/Week 2/Tuesday/Tuesday.iml" filepath="$PROJECT_DIR$/exercises GIT/Week 2/Tuesday/Tuesday.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercises GIT/Week 1/Week 1.iml" filepath="$PROJECT_DIR$/exercises GIT/Week 1/Week 1.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercises GIT/Week 2/Week 2.iml" filepath="$PROJECT_DIR$/exercises GIT/Week 2/Week 2.iml" />
     </modules>
