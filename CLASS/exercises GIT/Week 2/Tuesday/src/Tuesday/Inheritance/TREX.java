@@ -7,7 +7,7 @@ public class TREX extends Dinosaurs {
     public TREX(String aggressive) {
         // super(weight, teeth, legs, sound, species,warmBlooded);
             this.weight = 15500 ;
-            this.teeth = 60;
+            this.teeth = 80;
             this.legs = 2;
             this. sound = "RAWR";
             this.species = "Tyrannosaurus";

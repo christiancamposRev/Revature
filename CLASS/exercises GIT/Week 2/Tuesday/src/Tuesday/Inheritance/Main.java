@@ -11,8 +11,8 @@ public class Main {
         crocodile.speak_specific();
         flying_lizard.speak_specific();
 
-        Dinosaurs frog = new Dinosaurs();
-        System.out.println(frog.species);
+        Dinosaurs lizard = new Dinosaurs();
+        System.out.println(flying_lizard.species);
 
         Dinosaurs triceratops = new Dinosaurs(18000, 800, 4, "grumble", "Ceratopsidae", "yes");
 
@@ -27,6 +27,12 @@ public class Main {
         Pteradactyl Pteradactyl = new Pteradactyl("no");
         System.out.println( Pteradactyl.toString());
 
+
+        }
+
+
     }
 
-}
+// 2. At least one class must exemplify encapsulation, preferably all of them
+//    - All fields are private
+//    - Public getters and setters

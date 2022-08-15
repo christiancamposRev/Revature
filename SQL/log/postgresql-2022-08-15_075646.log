@@ -1,0 +1,294 @@
+2022-08-15 07:56:46.040 PDT [7416] LOG:  starting PostgreSQL 14.5, compiled by Visual C++ build 1914, 64-bit
+2022-08-15 07:56:46.041 PDT [7416] LOG:  listening on IPv6 address "::", port 5432
+2022-08-15 07:56:46.041 PDT [7416] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-08-15 07:56:46.061 PDT [8360] LOG:  database system was shut down at 2022-08-15 07:56:37 PDT
+2022-08-15 07:56:46.075 PDT [7416] LOG:  database system is ready to accept connections
+2022-08-15 08:08:37.051 PDT [5024] FATAL:  password authentication failed for user "chris"
+2022-08-15 08:08:37.051 PDT [5024] DETAIL:  Role "chris" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2022-08-15 08:08:53.185 PDT [11296] FATAL:  password authentication failed for user "chris"
+2022-08-15 08:08:53.185 PDT [11296] DETAIL:  Role "chris" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2022-08-15 08:08:58.711 PDT [1712] FATAL:  password authentication failed for user "chris"
+2022-08-15 08:08:58.711 PDT [1712] DETAIL:  Role "chris" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2022-08-15 08:09:02.310 PDT [8456] FATAL:  password authentication failed for user "chris"
+2022-08-15 08:09:02.310 PDT [8456] DETAIL:  Role "chris" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2022-08-15 08:09:08.476 PDT [4464] FATAL:  password authentication failed for user "chris"
+2022-08-15 08:09:08.476 PDT [4464] DETAIL:  Role "chris" does not exist.
+	Connection matched pg_hba.conf line 89: "host    all             all             ::1/128                 scram-sha-256"
+2022-08-15 11:32:18.785 PDT [19008] ERROR:  relation "pgagent.pga_job" does not exist at character 15
+2022-08-15 11:32:18.785 PDT [19008] STATEMENT:  SELECT * FROM pgagent.pga_job
+2022-08-15 11:38:50.406 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:38:50.406 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50), food varchar(50))
+2022-08-15 11:38:56.702 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:38:56.702 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50), food varchar(50)) 
+	
+2022-08-15 11:39:17.527 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:39:17.527 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50), food varchar(50))
+2022-08-15 11:39:19.082 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:39:19.082 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50), food varchar(50))
+2022-08-15 11:39:20.509 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:39:20.509 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50), food varchar(50))
+2022-08-15 11:39:47.340 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:39:47.340 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50), food varchar(50))
+2022-08-15 11:43:28.455 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:43:28.455 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50),species varchar(50), food varchar(50))
+2022-08-15 11:43:37.057 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:43:37.057 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50),species varchar(50), food varchar(50))
+2022-08-15 11:43:40.653 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:43:40.653 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50),species varchar(50), food varchar(50))
+2022-08-15 11:43:42.284 PDT [13960] ERROR:  relation "pet" already exists
+2022-08-15 11:43:42.284 PDT [13960] STATEMENT:  create table pet (id integer, name varchar(50),species varchar(50), food varchar(50))
+2022-08-15 11:44:18.275 PDT [13960] ERROR:  table "pet" does not exist
+2022-08-15 11:44:18.275 PDT [13960] STATEMENT:  drop table pet
+2022-08-15 11:44:24.389 PDT [4480] ERROR:  relation "public.pet" does not exist at character 15
+2022-08-15 11:44:24.389 PDT [4480] STATEMENT:  SELECT * FROM public.pet
+2022-08-15 11:46:58.923 PDT [13960] ERROR:  syntax error at or near ";" at character 45
+2022-08-15 11:46:58.923 PDT [13960] STATEMENT:  create table pet(id integer, name varvhar(50;, species varchar(50), foood varchar (50));  
+	-- if we messed up the table in spelling, we can alter by doing this
+	alter table pet rename column foood to food; 
+	
+2022-08-15 11:47:30.460 PDT [13960] ERROR:  relation "pet" does not exist
+2022-08-15 11:47:30.460 PDT [13960] STATEMENT:  -- if we messed up the table in spelling, we can alter by doing this
+	alter table pet rename column foood to food
+2022-08-15 11:48:30.758 PDT [13960] ERROR:  relation "pet" does not exist
+2022-08-15 11:48:30.758 PDT [13960] STATEMENT:  -- if we messed up the table in spelling, we can alter by doing this
+	alter table pet rename column foood to food
+2022-08-15 11:49:37.677 PDT [13960] ERROR:  relation "pet" does not exist
+2022-08-15 11:49:37.677 PDT [13960] STATEMENT:  alter table pet rename column foood to food
+2022-08-15 11:49:53.635 PDT [16184] ERROR:  relation "pgagent.pga_job" does not exist at character 15
+2022-08-15 11:49:53.635 PDT [16184] STATEMENT:  SELECT * FROM pgagent.pga_job
+2022-08-15 11:50:07.465 PDT [13392] ERROR:  relation "pgagent.pga_job" does not exist at character 15
+2022-08-15 11:50:07.465 PDT [13392] STATEMENT:  SELECT * FROM pgagent.pga_job
+2022-08-15 11:50:17.598 PDT [11764] ERROR:  relation "pgagent.pga_job" does not exist at character 15
+2022-08-15 11:50:17.598 PDT [11764] STATEMENT:  SELECT * FROM pgagent.pga_job
+2022-08-15 11:50:31.435 PDT [26600] ERROR:  relation "pgagent.pga_job" does not exist at character 15
+2022-08-15 11:50:31.435 PDT [26600] STATEMENT:  SELECT * FROM pgagent.pga_job
+2022-08-15 11:55:03.564 PDT [24592] ERROR:  relation "pgagent.pga_job" does not exist at character 15
+2022-08-15 11:55:03.564 PDT [24592] STATEMENT:  SELECT * FROM pgagent.pga_job
+2022-08-15 11:55:39.607 PDT [15872] ERROR:  syntax error at or near "after" at character 1
+2022-08-15 11:55:39.607 PDT [15872] STATEMENT:  after table pet 
+	
+2022-08-15 11:56:03.246 PDT [15872] ERROR:  relation "pet" does not exist
+2022-08-15 11:56:03.246 PDT [15872] STATEMENT:  alter table pet rename column foood to food
+2022-08-15 11:57:49.217 PDT [15872] ERROR:  syntax error at or near "after" at character 1
+2022-08-15 11:57:49.217 PDT [15872] STATEMENT:  after table petdrop column dumn_column
+2022-08-15 11:57:56.161 PDT [15872] ERROR:  syntax error at or near "after" at character 1
+2022-08-15 11:57:56.161 PDT [15872] STATEMENT:  after table pet rename column dumb_column integer
+2022-08-15 11:57:57.764 PDT [15872] ERROR:  syntax error at or near "after" at character 1
+2022-08-15 11:57:57.764 PDT [15872] STATEMENT:  after table petdrop column dumn_column
+2022-08-15 11:58:11.342 PDT [13256] ERROR:  relation "pgagent.pga_job" does not exist at character 15
+2022-08-15 11:58:11.342 PDT [13256] STATEMENT:  SELECT * FROM pgagent.pga_job
+2022-08-15 11:59:32.566 PDT [15872] ERROR:  syntax error at or near "after" at character 1
+2022-08-15 11:59:32.566 PDT [15872] STATEMENT:  after table pet rename column dumb_column integer
+2022-08-15 11:59:34.599 PDT [15872] ERROR:  syntax error at or near "after" at character 1
+2022-08-15 11:59:34.599 PDT [15872] STATEMENT:  after table petdrop column dumn_column
+2022-08-15 11:59:36.474 PDT [15872] ERROR:  column "foood" does not exist
+2022-08-15 11:59:36.474 PDT [15872] STATEMENT:  alter table pet rename column foood to food
+2022-08-15 11:59:38.972 PDT [15872] ERROR:  relation "pet" already exists
+2022-08-15 11:59:38.972 PDT [15872] STATEMENT:  create table pet(id integer, name varchar(50), species varchar(50), foood varchar (50))
+2022-08-15 11:59:48.041 PDT [15872] ERROR:  syntax error at or near "after" at character 1
+2022-08-15 11:59:48.041 PDT [15872] STATEMENT:  after table pet rename column dumb_column integer
+2022-08-15 12:00:05.440 PDT [15872] ERROR:  syntax error at or near "integer" at character 43
+2022-08-15 12:00:05.440 PDT [15872] STATEMENT:  alter table pet rename column dumb_column integer
+2022-08-15 12:00:07.030 PDT [15872] ERROR:  syntax error at or near "column" at character 21
+2022-08-15 12:00:07.030 PDT [15872] STATEMENT:  alter table petdrop column dumn_column
+2022-08-15 12:00:18.203 PDT [15872] ERROR:  column "dumn_column" of relation "pet" does not exist
+2022-08-15 12:00:18.203 PDT [15872] STATEMENT:  alter table pet drop column dumn_column
+2022-08-15 12:00:39.366 PDT [15872] ERROR:  syntax error at or near "integer" at character 43
+2022-08-15 12:00:39.366 PDT [15872] STATEMENT:  alter table pet rename column dumb_column integer
+2022-08-15 12:00:57.149 PDT [15872] ERROR:  column "dumn_column" of relation "pet" does not exist
+2022-08-15 12:00:57.149 PDT [15872] STATEMENT:  alter table pet drop column dumn_column
+2022-08-15 12:01:02.155 PDT [15072] ERROR:  relation "pgagent.pga_job" does not exist at character 15
+2022-08-15 12:01:02.155 PDT [15072] STATEMENT:  SELECT * FROM pgagent.pga_job
+2022-08-15 12:01:33.392 PDT [15872] ERROR:  syntax error at or near "integer" at character 43
+2022-08-15 12:01:33.392 PDT [15872] STATEMENT:  alter table pet rename column dumb_column integer
+2022-08-15 12:01:35.715 PDT [15872] ERROR:  column "dumb_column" of relation "pet" does not exist
+2022-08-15 12:01:35.715 PDT [15872] STATEMENT:  alter table pet drop column dumb_column
+2022-08-15 12:01:37.548 PDT [15872] ERROR:  column "foood" does not exist
+2022-08-15 12:01:37.548 PDT [15872] STATEMENT:  alter table pet rename column foood to food
+2022-08-15 12:01:40.395 PDT [15872] ERROR:  relation "pet" already exists
+2022-08-15 12:01:40.395 PDT [15872] STATEMENT:  create table pet(id integer, name varchar(50), species varchar(50), foood varchar (50))
+2022-08-15 12:01:52.204 PDT [15872] ERROR:  syntax error at or near "integer" at character 43
+2022-08-15 12:01:52.204 PDT [15872] STATEMENT:  alter table pet rename column dumb_column integer
+2022-08-15 12:01:55.836 PDT [15872] ERROR:  column "dumb_column" of relation "pet" does not exist
+2022-08-15 12:01:55.836 PDT [15872] STATEMENT:  alter table pet drop column dumb_column
+2022-08-15 12:02:56.255 PDT [15872] ERROR:  relation "pet" already exists
+2022-08-15 12:02:56.255 PDT [15872] STATEMENT:  create table pet (id integer, name varchar(50),species varchar(50), food varchar(50))
+2022-08-15 12:03:10.128 PDT [15872] ERROR:  syntax error at or near "integer" at character 43
+2022-08-15 12:03:10.128 PDT [15872] STATEMENT:  alter table pet rename column dumb_column integer
+2022-08-15 12:03:12.289 PDT [15872] ERROR:  column "dumb_column" of relation "pet" does not exist
+2022-08-15 12:03:12.289 PDT [15872] STATEMENT:  alter table pet drop column dumb_column
+2022-08-15 12:06:10.718 PDT [15872] ERROR:  syntax error at or near "integer" at character 43
+2022-08-15 12:06:10.718 PDT [15872] STATEMENT:  alter table pet rename column dumb_column integer
+2022-08-15 12:06:11.248 PDT [15872] ERROR:  syntax error at or near "integer" at character 43
+2022-08-15 12:06:11.248 PDT [15872] STATEMENT:  alter table pet rename column dumb_column integer
+2022-08-15 12:06:11.735 PDT [15872] ERROR:  syntax error at or near "integer" at character 43
+2022-08-15 12:06:11.735 PDT [15872] STATEMENT:  alter table pet rename column dumb_column integer
+2022-08-15 12:06:13.603 PDT [15872] ERROR:  table "pet" does not exist
+2022-08-15 12:06:13.603 PDT [15872] STATEMENT:  drop table pet
+2022-08-15 12:06:15.022 PDT [15872] ERROR:  table "pet" does not exist
+2022-08-15 12:06:15.022 PDT [15872] STATEMENT:  drop table pet
+2022-08-15 12:18:11.920 PDT [4868] ERROR:  syntax error at or near "!" at character 34
+2022-08-15 12:18:11.920 PDT [4868] STATEMENT:  insert into pets (id,name) values!1, 'Ashes')
+2022-08-15 12:26:51.220 PDT [4868] ERROR:  syntax error at or near "alues" at character 29
+2022-08-15 12:26:51.220 PDT [4868] STATEMENT:  insert into food (id, name) alues (default, 'meow mix')
+	insert into food (id, name) alues (default, 'kibble')
+	insert into food (id, name) alues (default, 'bird seed')
+	insert into food (id, name) alues (default, 'water')
+	
+2022-08-15 12:26:52.776 PDT [4868] ERROR:  syntax error at or near "alues" at character 29
+2022-08-15 12:26:52.776 PDT [4868] STATEMENT:  insert into food (id, name) alues (default, 'meow mix')
+	insert into food (id, name) alues (default, 'kibble')
+	insert into food (id, name) alues (default, 'bird seed')
+	insert into food (id, name) alues (default, 'water')
+	
+2022-08-15 12:27:01.301 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:27:01.301 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+	
+2022-08-15 12:27:03.735 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:27:03.735 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+	
+2022-08-15 12:27:05.280 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:27:05.280 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+	
+2022-08-15 12:27:06.766 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:27:06.766 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+	
+2022-08-15 12:27:35.672 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:27:35.672 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+	
+2022-08-15 12:28:03.160 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:28:03.160 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+	
+2022-08-15 12:28:45.370 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:28:45.370 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+2022-08-15 12:28:48.377 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:28:48.377 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+2022-08-15 12:28:55.085 PDT [4868] ERROR:  relation "pets" already exists
+2022-08-15 12:28:55.085 PDT [4868] STATEMENT:  create table pets (id integer primary key, name varchar(50))
+2022-08-15 12:28:57.777 PDT [4868] ERROR:  relation "food" already exists
+2022-08-15 12:28:57.777 PDT [4868] STATEMENT:  create table food(id integer primary key, name varchar(50))
+2022-08-15 12:28:58.701 PDT [4868] ERROR:  duplicate key value violates unique constraint "pets_pkey"
+2022-08-15 12:28:58.701 PDT [4868] DETAIL:  Key (id)=(1) already exists.
+2022-08-15 12:28:58.701 PDT [4868] STATEMENT:  insert into pets (id,name) values(1,'Ashes')
+2022-08-15 12:28:59.943 PDT [4868] ERROR:  duplicate key value violates unique constraint "pets_pkey"
+2022-08-15 12:28:59.943 PDT [4868] DETAIL:  Key (id)=(2) already exists.
+2022-08-15 12:28:59.943 PDT [4868] STATEMENT:  insert into pets (id, name) values (2, 'Ashes')
+2022-08-15 12:29:00.446 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:29:00.446 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+	
+	
+2022-08-15 12:29:30.005 PDT [4868] ERROR:  relation "food" already exists
+2022-08-15 12:29:30.005 PDT [4868] STATEMENT:  create table food(id integer primary key, name varchar(50))
+2022-08-15 12:29:52.591 PDT [4868] ERROR:  syntax error at or near "table" at character 8
+2022-08-15 12:29:52.591 PDT [4868] STATEMENT:  delete table if exists pets 
+	delete table if exists food
+2022-08-15 12:29:53.795 PDT [4868] ERROR:  syntax error at or near "table" at character 8
+2022-08-15 12:29:53.795 PDT [4868] STATEMENT:  delete table if exists pets 
+	delete table if exists food
+2022-08-15 12:30:00.535 PDT [4868] ERROR:  syntax error at or near "table" at character 8
+2022-08-15 12:30:00.535 PDT [4868] STATEMENT:  delete table if exists pets 
+	delete table if exists food
+2022-08-15 12:30:18.848 PDT [4868] ERROR:  syntax error at or near "drop" at character 29
+2022-08-15 12:30:18.848 PDT [4868] STATEMENT:  drop table if exists pets 
+	drop table if exists food
+2022-08-15 12:30:20.277 PDT [4868] ERROR:  syntax error at or near "drop" at character 29
+2022-08-15 12:30:20.277 PDT [4868] STATEMENT:  drop table if exists pets 
+	drop table if exists food
+2022-08-15 12:30:21.050 PDT [4868] ERROR:  syntax error at or near "drop" at character 29
+2022-08-15 12:30:21.050 PDT [4868] STATEMENT:  drop table if exists pets 
+	drop table if exists food
+2022-08-15 12:30:45.731 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:30:45.731 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+2022-08-15 12:30:47.306 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:30:47.306 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+2022-08-15 12:30:49.245 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:30:49.245 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+2022-08-15 12:30:51.567 PDT [4868] ERROR:  syntax error at or near "insert" at character 59
+2022-08-15 12:30:51.567 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+	insert into food (id, name) values (default, 'kibble')
+	insert into food (id, name) values (default, 'bird seed')
+	insert into food (id, name) values (default, 'water')
+2022-08-15 12:31:10.699 PDT [4868] ERROR:  syntax error at or near "insert" at character 60
+2022-08-15 12:31:10.699 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+		insert into food (id, name) values (default, 'kibble')
+		insert into food (id, name) values (default, 'bird seed')
+		insert into food (id, name) values (default, 'water')
+2022-08-15 12:31:22.259 PDT [4868] ERROR:  syntax error at or near "insert" at character 60
+2022-08-15 12:31:22.259 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+		insert into food (id, name) values (default, 'kibble')
+		insert into food (id, name) values (default, 'bird seed')
+		insert into food (id, name) values (default, 'water')
+2022-08-15 12:32:39.953 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:32:39.953 PDT [4868] DETAIL:  Failing row contains (null, meow mix).
+2022-08-15 12:32:39.953 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+2022-08-15 12:33:20.788 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:33:20.788 PDT [4868] DETAIL:  Failing row contains (null, meow mix).
+2022-08-15 12:33:20.788 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+2022-08-15 12:33:43.957 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:33:43.957 PDT [4868] DETAIL:  Failing row contains (null, kibble).
+2022-08-15 12:33:43.957 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'kibble')
+2022-08-15 12:33:47.350 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:33:47.350 PDT [4868] DETAIL:  Failing row contains (null, bird seed).
+2022-08-15 12:33:47.350 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'bird seed')
+2022-08-15 12:33:50.377 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:33:50.377 PDT [4868] DETAIL:  Failing row contains (null, water).
+2022-08-15 12:33:50.377 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'water')
+2022-08-15 12:34:41.316 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:34:41.316 PDT [4868] DETAIL:  Failing row contains (null, meow mix).
+2022-08-15 12:34:41.316 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+2022-08-15 12:34:53.845 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:34:53.845 PDT [4868] DETAIL:  Failing row contains (null, meow mix).
+2022-08-15 12:34:53.845 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+2022-08-15 12:38:31.218 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:38:31.218 PDT [4868] DETAIL:  Failing row contains (null, meow mix).
+2022-08-15 12:38:31.218 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+2022-08-15 12:40:59.613 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:40:59.613 PDT [4868] DETAIL:  Failing row contains (null, meow mix).
+2022-08-15 12:40:59.613 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+2022-08-15 12:41:05.318 PDT [4868] ERROR:  null value in column "id" of relation "food" violates not-null constraint
+2022-08-15 12:41:05.318 PDT [4868] DETAIL:  Failing row contains (null, meow mix).
+2022-08-15 12:41:05.318 PDT [4868] STATEMENT:  insert into food (id, name) values (default, 'meow mix')
+2022-08-15 13:20:30.775 PDT [21408] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-08-15 13:20:33.814 PDT [24176] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
