@@ -292,3 +292,17 @@
 	
 2022-08-15 13:20:33.814 PDT [24176] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
 	
+2022-08-15 13:27:48.545 PDT [10288] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-08-15 13:27:48.545 PDT [11500] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-08-15 13:27:48.545 PDT [12808] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-08-15 13:27:48.545 PDT [1820] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-08-15 20:18:13.013 PDT [5936] ERROR:  canceling statement due to user request
+2022-08-15 20:18:13.015 PDT [7416] LOG:  received fast shutdown request
+2022-08-15 20:18:13.017 PDT [7416] LOG:  aborting any active transactions
+2022-08-15 20:18:13.017 PDT [7416] LOG:  background worker "logical replication launcher" (PID 5936) exited with exit code 1
+2022-08-15 20:18:13.019 PDT [21828] LOG:  shutting down
+2022-08-15 20:18:13.033 PDT [7416] LOG:  database system is shut down
