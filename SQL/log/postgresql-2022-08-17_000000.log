@@ -1,0 +1,7 @@
+2022-08-17 08:45:15.722 PDT [6688] ERROR:  syntax error at or near "Null" at character 218
+2022-08-17 08:45:15.722 PDT [6688] STATEMENT:  INSERT INTO "Customer" ("CustomerId", "FirstName", "LastName", "Company","Address", "City", "State", "Country", "PostalCode", "Phone", "Fax", "Email", "SupportRepId") VALUES (60, N'Jason', N'Todd', N'Null', N'Null, N'Null', N'null', N'Null', N'Null', N'Null', N'Null', N'Null',N'Null', Null);
+	INSERT INTO "Customer" ("CustomerId", "FirstName", "LastName", "Company","Address", "City", "State", "Country", "PostalCode", "Phone", "Fax", "Email", "SupportRepId") VALUES (61, N'Robin', N'Grayson', N'Null', N'Null, N'Null', N'null', N'Null', N'Null', N'Null', N'Null', N'Null',N'Null', 'Null')
+2022-08-17 08:45:22.748 PDT [6688] ERROR:  syntax error at or near "INSERT" at character 69
+2022-08-17 08:45:22.748 PDT [6688] STATEMENT:  INSERT INTO "Genre" ("GenreId", "Name") VALUES (26, N'Latin Trap')
+	INSERT INTO "Genre" ("GenreId", "Name") VALUES (27, N'Alternative Rock')
+	INSERT INTO "Employee" ("EmployeeId", "LastName", "FirstName", "Title", "ReportsTo", "BirthDate", "HireDate", "Address", "City", "State", "Country", "PostalCode", "Phone", "Fax", "Email") VALUES (9, N'Peter', N'Parker',N'Superhero', 1, '03/15/1996', '2012/5/1', N'Null', N'Null', N'Null', N'USA', N'Null', N'Null', N'Null (uNll', N'Null')
