@@ -1,0 +1,10 @@
+2022-08-18 12:31:46.680 PDT [10288] LOG:  starting PostgreSQL 14.5, compiled by Visual C++ build 1914, 64-bit
+2022-08-18 12:31:46.681 PDT [10288] LOG:  listening on IPv6 address "::", port 5432
+2022-08-18 12:31:46.681 PDT [10288] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-08-18 12:31:46.739 PDT [10572] LOG:  database system was interrupted; last known up at 2022-08-17 14:16:40 PDT
+2022-08-18 12:31:47.878 PDT [10572] LOG:  invalid primary checkpoint record
+2022-08-18 12:31:47.878 PDT [10572] PANIC:  could not locate a valid checkpoint record
+2022-08-18 12:31:47.974 PDT [10288] LOG:  startup process (PID 10572) was terminated by exception 0xC0000409
+2022-08-18 12:31:47.974 PDT [10288] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2022-08-18 12:31:47.974 PDT [10288] LOG:  aborting startup due to startup process failure
+2022-08-18 12:31:47.975 PDT [10288] LOG:  database system is shut down
